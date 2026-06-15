@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : #0B1F3A;
+    --secondary: #E63964;
+    --cta: #FFC300;
+    --bg : #F8F9FA;
+    --primary-text: #212529;
+    --secondary-text: #6C757D;
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Inter", sans-serif;
+}
