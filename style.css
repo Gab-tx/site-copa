@@ -145,7 +145,7 @@ section {
 }
 
 #secao-tempo {
-    background-image: linear-gradient(#0b1f3ab5, #3a3a3a93), url("assests/banner.webp");
+    background-image: linear-gradient(#0b1f3acb, #3a3a3aad), url("assests/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -217,4 +217,123 @@ section {
         font-size: 24px;
         font-family: var(--text-font);
     }
+}
+
+#partidas-em-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & button {
+        width: 70%;
+        padding: 16px 20px;
+        border: none;
+        color: white;
+        margin: 12px 0px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .09);
+        }
+    }
+}
+
+#container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-content: center;
+    align-items: center;
+}
+
+.card-partida-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+
+    transition: .3s ease;
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.card-partida-destaque img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-container-meio {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-meio span {
+    font-family: var(--title-font);
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.card-container-meio div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100px;
+}
+.card-container-meio img {
+    width: 60px;
+}
+
+.card-container-meio p {
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card-container-baixo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.card-container-baixo div {
+    display: flex;
+    gap: 5px;
+}
+
+.card-container-baixo img {
+    width: 20px;
+}
+
+.card-container-baixo p {
+    font-family: var(--text-font);
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#title-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: var(--title-font);
+    margin: 20px auto;
+    border-bottom: 4px solid #0B1F3A;
+    width: 150px;
+    text-wrap: nowrap;
+}
+
+#title-destaque h2 {
+    margin: 30px auto;
 }
