@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary : #0B1F3A;
+    --primary: #0B1F3A;
     --secondary: #E63964;
     --cta: #FFC300;
     --cta-hover: #ffcf32;
-    --bg : #F8F9FA;
+    --bg: #F8F9FA;
     --primary-text: #212529;
     --secondary-text: #6C757D;
     --title-font: "Montserrat", sans-serif;
@@ -30,7 +30,7 @@ header {
     height: 100%;
     background-color: var(--primary);
     color: white;
-    padding: clamp( 20px, 4vw, 40px);
+    padding: clamp(20px, 4vw, 40px);
 }
 
 #container-esquerda {
@@ -39,12 +39,23 @@ header {
     gap: clamp(10px, 4vw, 30px);
 }
 
+#container-esquerda img {
+    width: 90px;
+    transition: .3s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
 #container-esquerda h1 {
     font-family: var(--title-font);
     font-size: 42px;
     letter-spacing: -4px;
     word-spacing: 2px;
 }
+
 #container-esquerda p {
     font-family: var(--title-font);
     font-size: 20px;
@@ -57,6 +68,7 @@ header {
     flex-direction: column;
     align-items: center;
     transition: .3s ease;
+
     &:hover {
         color: var(--cta-hover);
         cursor: pointer;
@@ -84,6 +96,7 @@ nav ul a {
     padding: 4px;
     border-radius: 6px;
     transition: .3s ease;
+
     &:hover {
         color: var(--cta-hover);
     }
@@ -103,12 +116,14 @@ nav button {
 .cta-button {
     background-color: var(--cta);
     transition: .1s ease-in;
+
     &:hover {
         background-color: var(--cta-hover);
         cursor: pointer;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgb(106, 106, 106);
     }
+
     &:active {
         transform: translateY(0px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
@@ -117,4 +132,89 @@ nav button {
 
 .button {
     background: var(--primary);
+}
+
+section {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(30px, 10vh, 50px);
+    gap: clamp(10px, 4vh, 30px);
+}
+
+#secao-tempo {
+    background-image: linear-gradient(#0b1f3ab5, #3a3a3a93), url("assests/banner.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    gap: 70px;
+}
+
+#secao-tempo button {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+}
+
+#contador-container {
+    display: flex;
+    gap: 16px;
+    color: white;
+    align-items: center;
+}
+
+#contador-container span {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.numero-container {
+    text-align: center;
+    padding: 16px 20px;
+    border-radius: 6px;
+    border: 3px solid var(--secondary);
+    width: 150px;
+}
+
+.numero-contador {
+    font-family: var(--title-font);
+    font-size: clamp(16px, 20vw, 42px);
+    font-weight: bold;
+}
+
+.texto-contador {
+    font-family: var(--text-font);
+    font-size: 16px;
+}
+
+#secao-tempo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        font-family: var(--title-font);
+        font-size: 72px;
+        color: white;
+        font-weight:bolder;
+        letter-spacing: -5px;
+        word-spacing: 6px
+    }
+
+    ;
+
+    p {
+        color: white;
+        font-size: 24px;
+        font-family: var(--text-font);
+    }
 }
