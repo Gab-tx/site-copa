@@ -116,6 +116,11 @@ nav button {
 .cta-button {
     background-color: var(--cta);
     transition: .1s ease-in;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: white;
+    font-weight: bold;
 
     &:hover {
         background-color: var(--cta-hover);
@@ -470,4 +475,79 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+/* #secao-ingressos {
+
+} */
+
+#ingressos-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.ingresso-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    padding: 22px;
+    width: 320px;
+    height: 280px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--text-font);
+
+    transition: .3s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.ingresso-card #superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.ingresso-card #superior div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d3d3d3;
+    width: 110%;
+}
+
+.ingresso-card #superior div h3 {
+    font-family: var(--title-font);
+    margin-right: 20px;
+    letter-spacing: -1px;
+}
+
+.ingresso-card #superior ul li {
+    font-weight: 500;
+    color: var(--primary-text);
+}
+
+.ingresso-card #inferior {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+    & button {
+        width: 100%;
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+        }
+    }
+}
+
+.ingresso-card #inferior p {
+    font-weight: bold;
 }
