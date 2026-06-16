@@ -65,10 +65,9 @@
         </section>
 
 
-
         <section class="section" id="partidas-em-destaque">
 
-            <div aria-label="title-destaque" id="title-destaque">
+            <div aria-label="title-destaque" class="title-section">
                 <h2>PARTIDAS EM DESTAQUE</h2>
             </div>
 
@@ -174,18 +173,51 @@
 
         </section>
 
+
         <section class="section" id="busca-ingressos">
 
             <div aria-label="title-destaque" class="title-section">
-                <h2>PARTIDAS EM DESTAQUE</h2>
+                <h2>BUSCA DE INGRESSOS</h2>
             </div>
 
-            <div>
-                <input type="checkbox" id="selecao">
-                <input type="checkbox" id="cidade">
-                <input type="checkbox" id="data">
-                <input type="checkbox" id="categoria">
-                <button></button>
+            <div aria-label="container-pesquisa" id="container-pesquisa">
+
+                <div class="input-select">
+                    <label for="selecao">SELEÇÃO</label>
+                    <select name="selecao" id="selecao">
+                        <option value="">TODAS</option>
+                        <option value="brasil">BRASIL</option>
+                        <option value="argentina">ARGENTINA</option>
+                        <option value="uruguai">URUGUAI</option>
+                    </select>
+                </div>
+
+                <div class="input-select">
+                    <label for="cidade">CIDADE</label>
+                    <select name="cidade" id="cidade">
+                        <option value="">TODAS</option>
+                        <option value="filadelfia">FILADÉLFIA</option>
+                        <option value="vancouver">VANCOUVER</option>
+                        <option value="guadalajara">GUADALAJARA</option>
+                    </select>
+                </div>
+
+                <div class="input-select">
+                    <label for="data">DATA</label>
+                    <input type="date" name="data" id="data">
+                </div>
+
+                <div class="input-select">
+                    <label for="categoria">CATEGORIA</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">TODAS</option>
+                        <option value="vip">VIP</option>
+                        <option value="premium">PREMIUM</option>
+                        <option value="arquibancada">ARQUIBANCADA</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">BUSCAR</button>
             </div>
 
         </section>

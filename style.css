@@ -180,7 +180,8 @@ section {
     text-align: center;
     padding: 16px 20px;
     border-radius: 6px;
-    border: 3px solid var(--secondary);
+    background: var(--secondary);
+    border: 3px solid #9a304b;
     width: 150px;
 }
 
@@ -322,7 +323,7 @@ section {
     font-weight: 500;
 }
 
-#title-destaque {
+.title-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -334,6 +335,69 @@ section {
     text-wrap: nowrap;
 }
 
-#title-destaque h2 {
+.title-section h2 {
     margin: 30px auto;
+}
+
+#busca-ingressos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--primary), #133561) ;
+}
+
+#busca-ingressos .title-section {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+#container-pesquisa {
+    display: flex;
+    gap: 80px;
+    align-items: end;
+}
+
+.input-select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--text-font);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.input-select select, .input-select input {
+    padding: 10px 12px;
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+}
+
+.input-select option {
+    font-family: var(--text-font);
+}
+
+#container-pesquisa button {
+    width: 100px;
+}
+
+.button {
+    padding: 10px 12px;
+    background-color: var(--cta);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--text-font);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .1s ease;
+    &:hover {
+        transform: translateY(-2px);
+        background:var(--cta-hover);
+        box-shadow: 0 4px 12px rgb(106, 106, 106);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
 }
