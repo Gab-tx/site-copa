@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 :root {
     --primary: #0B1F3A;
     --secondary: #E63964;
@@ -39,7 +43,7 @@ header {
     gap: clamp(10px, 4vw, 30px);
 }
 
-#container-esquerda img {
+.logo {
     width: 90px;
     transition: .3s ease;
 
@@ -233,7 +237,7 @@ section {
     height: 120vh;
     padding-top: 0px;
 
-    background: linear-gradient(var(--bg) 60%,var(--primary)100% );
+    background: linear-gradient(var(--bg) 60%, var(--primary)100%);
 
     & button {
         width: 70%;
@@ -446,6 +450,7 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
     padding-bottom: 10px;
     transition: .3s ease;
+
     &:hover {
         transform: scale(1.1);
         box-shadow: 0 6px 42px rgba(0, 0, 0, .2);
@@ -483,7 +488,7 @@ section {
 
 #ingressos-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -502,6 +507,7 @@ section {
     font-family: var(--text-font);
 
     transition: .3s ease;
+
     &:hover {
         transform: scale(1.1);
     }
@@ -540,8 +546,10 @@ section {
     flex-direction: column;
     gap: 10px;
     width: 75%;
+
     & button {
         width: 100%;
+
         &:hover {
             box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
         }
@@ -550,4 +558,52 @@ section {
 
 .ingresso-card #inferior p {
     font-weight: bold;
+}
+
+footer {
+    background: var(--primary);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+#footer-left {
+    display: flex;
+    align-items: center;
+
+    & #header-text-container {
+        font-size: 16px;
+        font-family: var(--title-font);
+    }
+}
+
+#footer-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    font-family: var(--text-font);
+}
+
+#footer-mid div {
+    width: 300px;
+}
+
+#footer-mid a {
+    color: white;
+}
+
+#sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    & ul {
+        list-style: none;
+    }
+
+    ;
 }
